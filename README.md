@@ -1,2 +1,2 @@
-# js30
+# Javascript Experiments
 My Vanilla JS Experiments 
