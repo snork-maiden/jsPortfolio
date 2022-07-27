@@ -1,2 +1,2 @@
 # js30
-30 Day Vanilla JS Challenge 
+My Vanilla JS Experiments 
