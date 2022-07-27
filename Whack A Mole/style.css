@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background: #ffc600;
+  cursor: url('hammer-svgrepo-com.svg')  12 12, auto;
 }
 
 *,
@@ -14,6 +15,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Amatic SC", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -35,7 +39,6 @@ h1 {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .hole {
@@ -68,4 +71,14 @@ h1 {
 
 .hole.up .mole {
   top: 0;
+}
+
+.start-button {
+  cursor: pointer;
+  margin-top: 2em;
+  font: inherit;
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: #9CAFB7;
+  padding: 0.3em 0.5em;
 }
