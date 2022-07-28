@@ -11,10 +11,20 @@ body {
   margin: 0; /* Important! */
   font-family: sans-serif;
   background:
-    linear-gradient(45deg, hsla(340, 100%, 55%, 1) 0%, hsla(340, 100%, 55%, 0) 70%),
-    linear-gradient(135deg, hsla(225, 95%, 50%, 1) 10%, hsla(225, 95%, 50%, 0) 80%),
-    linear-gradient(225deg, hsla(140, 90%, 50%, 1) 10%, hsla(140, 90%, 50%, 0) 80%),
-    linear-gradient(315deg, hsla(35, 95%, 55%, 1) 100%, hsla(35, 95%, 55%, 0) 70%);
+  linear-gradient(
+    340deg,
+    hsl(240deg 38% 77%) 0%,
+    hsl(302deg 33% 75%) 4%,
+    hsl(343deg 72% 81%) 12%,
+    hsl(9deg 96% 83%) 33%,
+    hsl(29deg 84% 79%) 67%,
+    hsl(55deg 52% 75%) 82%,
+    hsl(40deg 66% 78%) 90%,
+    hsl(29deg 72% 82%) 94%,
+    hsl(20deg 66% 84%) 97%,
+    hsl(11deg 48% 85%) 99%,
+    hsl(0deg 24% 84%) 100%
+  );
 }
 
 .wrapper {
@@ -28,8 +38,9 @@ body {
 a {
   text-decoration: none;
   color: black;
-  background: rgba(0,0,0,0.05);
+  background: rgba(189, 186, 233, 0.274);
   border-radius: 20px;
+  padding: 2px;
 }
 
 .highlight {
@@ -38,6 +49,7 @@ a {
   position: absolute;
   top: 0;
   background: white;
+  border: 2px solid white;
   left: 0;
   z-index: -1;
   border-radius: 20px;
@@ -48,14 +60,16 @@ a {
 .menu {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
+  gap: 20px;
   margin:100px 0;
 }
 
-.menu a {
+.menu__item {
   display: inline-block;
   padding: 5px;
-  margin: 0 20px;
+  font-size: 1.5em;
   color: black;
 }
