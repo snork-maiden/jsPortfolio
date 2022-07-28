@@ -142,6 +142,8 @@ img {
 
 .project__image {
   grid-area: image;
+  width: 128px;
+  height: 128px;
 }
 
 .project__description {
