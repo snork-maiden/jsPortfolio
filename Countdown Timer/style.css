@@ -1,26 +1,47 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #8E24AA;
-  background: linear-gradient(45deg,  #42a5f5 0%,#478ed1 50%,#0d47a1 100%);
+  background: #8e24aa;
+  background-image: linear-gradient(
+    130deg,
+    hsl(180deg 68% 28%) 0%,
+    hsl(193deg 60% 33%) 13%,
+    hsl(206deg 53% 38%) 25%,
+    hsl(219deg 46% 43%) 37%,
+    hsl(232deg 40% 49%) 47%,
+    hsl(245deg 42% 55%) 57%,
+    hsl(245deg 33% 56%) 67%,
+    hsl(245deg 24% 57%) 75%,
+    hsl(245deg 16% 58%) 84%,
+    hsl(245deg 8% 58%) 92%,
+    hsl(0deg 0% 58%) 100%
+  );
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .display__time-left {
   font-weight: 100;
-  font-size: 20rem;
   margin: 0;
   color: white;
-  text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+  font-size: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+  .display__time-left {
+    font-size: 20rem;
+  }
 }
 
 .timer {
@@ -31,6 +52,7 @@ body {
 
 .timer__controls {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .timer__controls > * {
@@ -55,16 +77,16 @@ body {
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
-  background: rgba(0,0,0,0.1);
-  border-bottom: 3px solid rgba(0,0,0,0.2);
-  border-right: 1px solid rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .timer__button:hover,
 .timer__button:focus {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   outline: 0;
 }
 
