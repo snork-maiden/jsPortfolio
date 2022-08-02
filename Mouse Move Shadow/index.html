@@ -46,12 +46,25 @@
       function changeShadow(e) {
         const width = hero.offsetWidth;
         const height = hero.offsetHeight;
-        const walk = 100; //100px
-        let { offsetX: x, offsetY: y } = e;
+        const walk = 100;
+        let x, y;
+        if (e.type === "touchmove") {
+          const touch = e.touches[0];
+          x = touch.clientX;
+          y = touch.clientY;
+          if (this !== touch.target) {
+            x += touch.screenX;
+            console.log(x);
+            y += touch.screenY;
+          }
+        } else {
+          x = e.offsetX;
+          y = e.offsetY;
 
-        if (this !== e.target) {
-          x = x + e.target.offsetLeft;
-          y = y + e.target.offsetTop;
+          if (this !== e.target) {
+            x = x + e.target.offsetLeft;
+            y = y + e.target.offsetTop;
+          }
         }
 
         const xWalk = Math.round((x / width) * walk - walk / 2);
