@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Type Ahead 👀</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -9,8 +10,8 @@
     <form class="search-form">
       <input type="text" class="search" placeholder="City or State" />
       <ul class="suggestions">
-        <li>Filter for a city</li>
-        <li>or a state</li>
+        <li class="suggestions__item">Filter for a city</li>
+        <li class="suggestions__item">or a state</li>
       </ul>
     </form>
     <script>
@@ -48,7 +49,7 @@
               `<span class="hl">${this.value}</span>`
             );
             return `
-    <li>
+    <li class="suggestions__item">
         <span class="name">${cityName}, ${stateName}</span>
         <span class="population">${numberWithCommas(place.population)}</span>
     </li>
