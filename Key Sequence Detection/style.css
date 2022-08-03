@@ -1,16 +1,27 @@
 @media screen and (hover: hover) {
-    p, input {
-        display: none;
-    }
+  p,
+  input {
+    display: none;
+  }
 }
 
 input {
-    position: absolute;
-    color: transparent;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border: none;
-    z-index: -1;
+  position: absolute;
+  color: transparent;
+  caret-color: transparent;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  z-index: -1;
+}
+
+input:focus {
+  outline: none;
+  color: transparent;
+}
+
+input:focus + p {
+  display: none;
 }
