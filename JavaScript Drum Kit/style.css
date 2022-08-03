@@ -1,3 +1,7 @@
+:root {
+  --accent-yellow: #ffc600;
+}
+
 html {
   font-size: 10px;
   background-position: bottom center;
@@ -11,6 +15,7 @@ html {
     url("./background.jpg") type("image/jpeg")
   );
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body,
@@ -18,15 +23,64 @@ html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
+
+@media screen and (hover: hover) {
+  .mobile-tip,
+  .show-keyboard {
+    display: none;
+  }
+}
+
+.mobile-tip {
+  font: monospace;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  margin: 2em 0.5em;
+  padding: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 4px solid var(--accent-yellow);
+}
+
+.show-keyboard {
+  color: transparent;
+  background-color: transparent;
+  caret-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  z-index: -1;
+}
+
+.show-keyboard:focus {
+  outline: none;
+}
+
+
+
 
 .keys {
   display: flex;
   flex-wrap: wrap;
-  /* flex: 1; */
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  margin-top: 3em;
+}
+
+@media screen and (hover: hover) {
+.keys {
+  margin: auto;
+}
 }
 
 .key {
@@ -45,8 +99,8 @@ html {
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: var(--accent-yellow);
+  box-shadow: 0 0 1rem var(--accent-yellow);
 }
 
 kbd {
@@ -58,5 +112,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: var(--accent-yellow);
 }
