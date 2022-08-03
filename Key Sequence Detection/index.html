@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Key Detection</title>
+    <link rel="stylesheet" href="style.css" />
     <script
-      type="text/javascript"
-      src="https://www.cornify.com/js/cornify.js"
+    type="text/javascript"
+    src="https://www.cornify.com/js/cornify.js"
     ></script>
   </head>
   <body>
+    <p>Hey! Tap anywhere to see keyboard</p>
+    <input type="text">
     <script>
+      document.querySelector('input').focus()
       const pressed = [];
       const secretCode = "hey";
       window.addEventListener("keyup", (e) => {
