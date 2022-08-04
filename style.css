@@ -1,13 +1,9 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 ul[class],
@@ -103,7 +99,11 @@ img {
   width: 300px;
   max-width: 550px;
   flex-grow: 1;
-  background-image: linear-gradient(to bottom, hsl(229, 71%, 29%) 0%, #c5449a 100%);
+  background-image: linear-gradient(
+    to bottom,
+    hsl(229, 71%, 29%) 0%,
+    #c5449a 100%
+  );
 }
 @media screen and (min-width: 750px) {
   .project {
@@ -118,7 +118,7 @@ img {
   grid-template-areas:
     "image title"
     "description description";
-    gap: 20px 10px;
+  gap: 20px 10px;
   padding: 20px;
 }
 
