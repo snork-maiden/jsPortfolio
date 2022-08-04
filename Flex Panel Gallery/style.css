@@ -1,0 +1,104 @@
+html {
+  background: #ffc600;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: rgb(255, 246, 250);
+  text-align: center;
+  align-items: center;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex-grow 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel--open {
+  flex-grow: 5;
+  font-size: 2rem;
+}
+.panel--open-active > .panel__text:first-child {
+  transform: none;
+}
+.panel--open-active > .panel__text:last-child {
+  transform: translateY(0);
+}
+
+.panel1 {
+  background-image: url(https://source.unsplash.com/AQ9-jKmebjM/1500x1500);
+}
+.panel2 {
+  background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+}
+.panel3 {
+  background-image: url(https://source.unsplash.com/RIi48dz7CtI/1500x1500);
+}
+.panel4 {
+  background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+}
+.panel5 {
+  background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+}
+
+@media screen and (max-width: 749px) {
+  .panel1,
+  .panel5 {
+    display: none;
+  }
+}
+
+/* Flex Children */
+.panel__text {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Special Elite", cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 2rem;
+}
+
+.panel__text:first-child {
+  transform: translateY(-100%);
+}
+.panel__text:last-child {
+  transform: translateY(100%);
+}
+
+.panel__text--big {
+  font-size: 2.5em;
+}
+
+@media screen and (min-width: 750px) {
+  .panel__text:nth-child(2) {
+    font-size: 4em;
+  }
+}

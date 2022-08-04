@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flex Panels 💪</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="panels">
+      <div class="panel panel1">
+        <p class="panel__text">Hey</p>
+        <p class="panel__text panel__text--big">Let's</p>
+        <p class="panel__text">Dance</p>
+      </div>
+      <div class="panel panel2">
+        <p class="panel__text">Give</p>
+        <p class="panel__text panel__text--big">Take</p>
+        <p class="panel__text">Receive</p>
+      </div>
+      <div class="panel panel3">
+        <p class="panel__text">Experience</p>
+        <p class="panel__text panel__text--big">It</p>
+        <p class="panel__text">Today</p>
+      </div>
+      <div class="panel panel4">
+        <p class="panel__text">Give</p>
+        <p class="panel__text panel__text--big">All</p>
+        <p class="panel__text">You can</p>
+      </div>
+      <div class="panel panel5">
+        <p class="panel__text">Life</p>
+        <p class="panel__text panel__text--big">In</p>
+        <p class="panel__text">Motion</p>
+      </div>
+    </div>
+
+    <script>
+      const panels = document.querySelectorAll(".panel");
+      function toggleOpen() {
+        this.classList.toggle("panel--open");
+      }
+      function toggleActive(e) {
+        console.log(e.propertyName);
+        if (e.propertyName.includes("flex")) {
+          this.classList.toggle("panel--open-active");
+        }
+      }
+      panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
+      panels.forEach((panel) =>
+        panel.addEventListener("transitionend", toggleActive)
+      );
+    </script>
+  </body>
+</html>
