@@ -142,6 +142,7 @@ img {
 
 .project__image {
   grid-area: image;
+  align-self: start;
   width: 128px;
   height: 128px;
 }
