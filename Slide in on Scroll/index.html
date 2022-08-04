@@ -2,11 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="site-wrap">
-      <h1>Slide in on Scroll</h1>
+      <h1 class="title">Slide in on Scroll</h1>
 
       <p>
         Consectetur adipisicing elit. Tempore tempora rerum, est autem
@@ -46,9 +54,13 @@
         aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut,
         dignissimos.
       </p>
-
-      <img src="http://unsplash.it/400/400" class="align-left slide-in" />
-
+      <picture>
+        <source
+          srcset="http://unsplash.it/405/400"
+          media="(min-width: 1000px)"
+        />
+        <img class="align-left slide-in" src="http://unsplash.it/200/200" />
+      </picture>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates,
         deserunt facilis et iste corrupti omnis tenetur est. Iste ut est dicta
@@ -63,8 +75,13 @@
         quas quos et aperiam aut doloremque optio maxime fugiat doloribus. Eum
         dolorum expedita quam, nesciunt
       </p>
-
-      <img src="http://unsplash.it/400/401" class="align-right slide-in" />
+      <picture>
+        <source
+          srcset="http://unsplash.it/400/401"
+          media="(min-width: 1000px)"
+        />
+        <img class="align-right slide-in" src="http://unsplash.it/202/250" />
+      </picture>
 
       <p>
         at provident praesentium atque quas rerum optio dignissimos repudiandae
@@ -100,8 +117,13 @@
         eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta
         quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.
       </p>
-
-      <img src="http://unsplash.it/200/500" class="align-left slide-in" />
+      <picture">
+        <source
+          srcset="http://unsplash.it/200/500"
+          media="(min-width: 1000px)"
+        />
+        <img class="align-left slide-in" src="http://unsplash.it/150/300" />
+      </picture>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
@@ -144,8 +166,13 @@
         porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet,
         facere ducimus accusantium eos veritatis neque.
       </p>
-
-      <img src="http://unsplash.it/400/400" class="align-right slide-in" />
+      <picture>
+        <source
+          srcset="http://unsplash.it/401/400"
+          media="(min-width: 1000px)"
+        />
+        <img class="align-right slide-in" src="http://unsplash.it/201/250" />
+      </picture>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
@@ -253,65 +280,5 @@
 
       document.addEventListener("scroll", debounce(checkSlide));
     </script>
-
-    <style>
-      html {
-        box-sizing: border-box;
-        background: #ffc600;
-        font-family: "helvetica neue";
-        font-size: 20px;
-        font-weight: 200;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-
-      h1 {
-        margin-top: 0;
-      }
-
-      .site-wrap {
-        max-width: 700px;
-        margin: 100px auto;
-        background: white;
-        padding: 40px;
-        text-align: justify;
-      }
-
-      .align-left {
-        float: left;
-        margin-right: 20px;
-      }
-
-      .align-right {
-        float: right;
-        margin-left: 20px;
-      }
-
-      .slide-in {
-        opacity: 0;
-        transition: all 0.5s;
-      }
-
-      .align-left.slide-in {
-        transform: translateX(-30%) scale(0.95);
-      }
-
-      .align-right.slide-in {
-        transform: translateX(30%) scale(0.95);
-      }
-
-      .slide-in.active {
-        opacity: 1;
-        transform: translateX(0%) scale(1);
-      }
-    </style>
   </body>
 </html>
