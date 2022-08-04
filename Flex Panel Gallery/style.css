@@ -39,7 +39,7 @@ body {
 
 .panel--open {
   flex-grow: 5;
-  font-size: 2rem;
+  font-size: 1.3em;
 }
 .panel--open-active > .panel__text:first-child {
   transform: none;
@@ -64,14 +64,13 @@ body {
   background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 849px) {
   .panel1,
   .panel5 {
     display: none;
   }
 }
 
-/* Flex Children */
 .panel__text {
   margin: 0;
   width: 100%;
@@ -83,8 +82,21 @@ body {
   text-transform: uppercase;
   font-family: "Special Elite", cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2rem;
+  font-size: 1rem;
 }
+
+@media screen and (min-width: 750px) {
+  .panel__text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .panel__text {
+    font-size: 2em;
+  }
+}
+
 
 .panel__text:first-child {
   transform: translateY(-100%);
@@ -94,11 +106,17 @@ body {
 }
 
 .panel__text--big {
-  font-size: 2.5em;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 750px) {
-  .panel__text:nth-child(2) {
-    font-size: 4em;
+@media screen and (min-width: 1100px) {
+  .panel__text--big {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .panel__text--big {
+    font-size: 5em;
   }
 }
