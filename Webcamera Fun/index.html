@@ -9,70 +9,46 @@
   <body>
     <div class="photobooth">
       <div class="controls">
-        <div class="color-controls">
-          <label class="color-controls__label">
-            Red Min:
-            <input
-              class="color-controls__range"
-              type="range"
-              min="0"
-              max="255"
-              name="rmin"
-            />
+        <form class="color-controls" action="#" method="post">
+          <label class="controls-label">
+            Red:
+            <input class="range" type="range" min="-100" max="100" name="red" />
           </label>
-          <label class="color-controls__label">
-            Red Max:
+
+          <label class="controls-label">
+            Green:
             <input
-              class="color-controls__range"
+              class="range"
               type="range"
-              min="0"
-              max="255"
-              name="rmax"
+              min="-100"
+              max="100"
+              name="green"
             />
           </label>
 
-          <label class="color-controls__label">
-            Green Min:
+          <label class="controls-label">
+            Blue:
             <input
-              class="color-controls__range"
+              class="range"
               type="range"
-              min="0"
-              max="255"
-              name="gmin"
+              min="-100"
+              max="100"
+              name="blue"
             />
           </label>
-          <label class="color-controls__label">
-            Green Max:
-            <input
-              class="color-controls__range"
-              type="range"
-              min="0"
-              max="255"
-              name="gmax"
-            />
-          </label>
-
-          <label class="color-controls__label">
-            Blue Min:
-            <input
-              class="color-controls__range"
-              type="range"
-              min="0"
-              max="255"
-              name="bmin"
-            />
-          </label>
-          <label class="color-controls__label">
-            Blue Max:
-            <input
-              class="color-controls__range"
-              type="range"
-              min="0"
-              max="255"
-              name="bmax"
-            />
-          </label>
-        </div>
+          <button type="reset" class="reset-button">Reset colors</button>
+        </form>
+        <label class="ghosting controls-label">
+          Ghosting:
+          <input
+            class="range"
+            type="range"
+            min="-10"
+            max="-1"
+            value="-10"
+            name="globalAlpha"
+          />
+        </label>
       </div>
 
       <canvas class="photo"></canvas>
@@ -116,9 +92,7 @@
           </svg>
           Take photo
         </button>
-        <div class="strip">
-
-        </div>
+        <div class="strip"></div>
       </div>
     </div>
 
