@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Get User Media Code Along!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Get User Media Code Along!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="photobooth">
+      <div class="controls">
+        <div class="color-controls">
+          <label class="color-controls__label">
+            Red Min:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="rmin"
+            />
+          </label>
+          <label class="color-controls__label">
+            Red Max:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="rmax"
+            />
+          </label>
 
-  <div class="photobooth">
-    <div class="controls">
-      <button onClick="takePhoto()">Take Photo</button>
-      <div class="rgb">
-        <label for="rmin">Red Min:</label>
-        <input type="range" min=0 max=255 name="rmin">
-        <label for="rmax">Red Max:</label>
-        <input type="range" min=0 max=255 name="rmax">
+          <label class="color-controls__label">
+            Green Min:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="gmin"
+            />
+          </label>
+          <label class="color-controls__label">
+            Green Max:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="gmax"
+            />
+          </label>
 
-        <br>
+          <label class="color-controls__label">
+            Blue Min:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="bmin"
+            />
+          </label>
+          <label class="color-controls__label">
+            Blue Max:
+            <input
+              class="color-controls__range"
+              type="range"
+              min="0"
+              max="255"
+              name="bmax"
+            />
+          </label>
+        </div>
+      </div>
 
-        <label for="gmin">Green Min:</label>
-        <input type="range" min=0 max=255 name="gmin">
-        <label for="gmax">Green Max:</label>
-        <input type="range" min=0 max=255 name="gmax">
+      <canvas class="photo"></canvas>
+      <video class="player"></video>
+      <div class="photo-container">
+        <button class="photo-button" type="button" onClick="takePhoto()">
+          <svg
+            class="photo-button__image"
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            viewBox="0 0 512 512"
+            width="60"
+            height="60"
+          >
+            <circle cx="256" cy="256" r="256" fill="#394ce2" />
+            <path
+              fill="#1b2ddd"
+              d="M512 256a254 254 0 0 0-1.8-30.3l-74.5-74.5a33.1 33.1 0 0 0-25.4-11.8h-26.1l-41-41.4H168.8l-19.6 41.4h-47.4a33.2 33.2 0 0 0-33.2 33.1v190.2c0 10.1 4.6 19.2 11.8 25.3l117.3 117.3A256 256 0 0 0 512 256z"
+            />
+            <path fill="#fff" d="M343.3 98.1H168.7l-21.5 45.3h217.6z" />
+            <path fill="#e1e1e3" d="m364.8 143.4-21.5-45.3H256v45.3z" />
+            <path
+              fill="#f80"
+              d="M410.3 395.8H101.7a33.2 33.2 0 0 1-33.2-33.1V172.5c0-18.2 15-33.1 33.2-33.1h308.6a33.2 33.2 0 0 1 33.2 33.1v190.2c0 18.2-15 33.1-33.2 33.1z"
+            />
+            <path
+              fill="#e67500"
+              d="M410.3 139.4H256v256.4h154.3a33.2 33.2 0 0 0 33.2-33.1V172.5c0-18.2-15-33.1-33.2-33.1z"
+            />
+            <path fill="#ffc473" d="M68.5 245.7h375v43.7h-375z" />
+            <path fill="#ffa91f" d="M256 245.7h187.5v43.7H256z" />
+            <circle cx="256" cy="267.6" r="98.5" fill="#fff" />
+            <path fill="#e1e1e3" d="M256 169v197.1a98.5 98.5 0 1 0 0-197z" />
+            <circle cx="256" cy="267.6" r="73.1" fill="#0082d1" />
+            <path fill="#0070b4" d="M256 194.5v146.2a73 73 0 1 0 0-146.2z" />
+            <g fill="#fff">
+              <circle cx="222.6" cy="245.7" r="19.4" />
+              <path d="M361.6 169.1H417v52.1h-55.4z" />
+            </g>
+            <path fill="#0070b4" d="M369.6 177.3h39.3v35.5h-39.3z" />
+          </svg>
+          Take photo
+        </button>
+        <div class="strip">
 
-        <br>
-
-        <label for="bmin">Blue Min:</label>
-        <input type="range" min=0 max=255 name="bmin">
-        <label for="bmax">Blue Max:</label>
-        <input type="range" min=0 max=255 name="bmax">
+        </div>
       </div>
     </div>
 
-    <canvas class="photo"></canvas>
-    <video class="player"></video>
-    <div class="strip"></div>
-  </div>
+    <audio class="snap" src="./snap.mp3" hidden></audio>
 
-  <audio class="snap" src="./snap.mp3" hidden></audio>
-
-  <script src="scripts.js"></script>
-
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
