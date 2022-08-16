@@ -152,7 +152,8 @@ img {
 @media screen and (min-width: 750px) {
   .project__image {
     width: 128px;
-    height: 128px;  }
+    height: 128px;
+  }
 }
 
 .project__description {

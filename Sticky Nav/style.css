@@ -1,0 +1,154 @@
+*,
+*:before,
+*:after {
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background: #eeeeee;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+
+.page-header {
+  color: #503D3F;
+  text-align: center;
+  height: 50vh;
+  max-height: 60vw;
+  background: url(img/susan-wilkinson-IE_CeOGxKW8-unsplash.jpg) bottom center
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__subtitle {
+  font-family: "Patua One", cursive;
+  font-size: 1.5em;
+}
+
+.title {
+  font-family: "Patua One", cursive;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 450px) {
+  .title {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .title {
+    font-size: 6em;
+  }
+}
+
+.nav {
+  background: #503D3F;
+
+  top: -1px;
+  width: 100%;
+  transition: all 0.5s;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--fixed {
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-width: 0;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.nav--fixed .logo {
+  padding: 10px;
+  max-width: 250px;
+  width: 200px;
+}
+
+.logo__link {
+
+  color: #503D3F;
+
+}
+
+.nav__link {
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.tale {
+  max-width: 800px;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+.tale__image {
+  max-width: 100%;
+  float: left;
+  padding: 1em;
+}
+
+.tale__image--right {
+  float: right;
+}
+
+.tale p {
+  padding-bottom: 0.8em;
+}
+
+.tale p:first-child::first-letter {
+  color: #503D3F;
+  font-family: "Patua One", cursive;
+  font-size:2em;
+}
+
+.tale p:first-child::first-line {
+  font-size: 1.3em;
+}
+
+@media screen and (min-width: 620px) {
+  .tale p:first-child::first-line {
+    font-size: 1.8em;
+  }
+}
