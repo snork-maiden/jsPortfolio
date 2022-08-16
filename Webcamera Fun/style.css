@@ -15,7 +15,6 @@ body {
   display: grid;
   grid-template-rows: auto auto;
   background: #ebf7f1;
-  height: 92vh;
   margin: 2rem auto;
   border-radius: 2px;
 }
@@ -23,6 +22,12 @@ body {
 @media screen and (max-height:600px) and (orientation: landscape) {
   .photobooth {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .photobooth {
+    height: 92vh;
   }
 }
 
@@ -85,9 +90,11 @@ body {
 .reset-button {
   justify-self: end;
   font: inherit;
+  color: inherit;
   background: #e3d7ff;
-  padding: 0 1em;
+  padding: 0.3em 1em;
   width: max-content;
+  height: fit-content;
 }
 
 @media screen and (max-width: 1000px) {
