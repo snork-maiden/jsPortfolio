@@ -91,6 +91,7 @@ h1 {
   cursor: pointer;
   margin-top: 0.7em;
   font: inherit;
+  color: inherit;
   font-size: 3rem;
   font-weight: bold;
   background-color: #9CAFB7;
