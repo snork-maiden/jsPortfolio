@@ -4,8 +4,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #4C4C4C url('https://unsplash.it/1500/900?image=1021');
-  background-size: cover;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 5% 63%) 0%,
+    hsl(271deg 5% 66%) 21%,
+    hsl(310deg 5% 68%) 30%,
+    hsl(335deg 8% 72%) 39%,
+    hsl(351deg 10% 75%) 46%,
+    hsl(5deg 12% 78%) 54%,
+    hsl(16deg 15% 80%) 61%,
+    hsl(25deg 17% 83%) 69%,
+    hsl(37deg 17% 85%) 79%,
+    hsl(53deg 15% 88%) 100%
+  );  
   font-family: sans-serif;
 }
 
@@ -15,6 +26,7 @@ body {
 }
 
 video {
+  max-width: 90vw;
   box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
 }
 

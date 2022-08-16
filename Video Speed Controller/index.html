@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Speed Scrubber</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,8 +26,7 @@
       const bar = speed.querySelector(".speed-bar");
       const video = document.querySelector(".flex");
       const initialSpeedHeightPercent = 16.3;
-
-      speed.addEventListener("mousemove", function (e) {
+      function changeSpeed(e) {
         if (video.paused) return;
 
         const y = e.pageY - this.offsetTop;
@@ -36,7 +36,10 @@
         let boost = Math.round((percent / initialSpeedHeightPercent) * 10) / 10;
         bar.textContent = boost + "x";
         video.playbackRate = boost;
-      });
+      }
+      speed.addEventListener("mousemove", changeSpeed);
+      speed.addEventListener("click", changeSpeed);
+
     </script>
   </body>
 </html>
