@@ -32,7 +32,6 @@
         if (video.paused) return;
 
         const y = e.pageY - this.offsetTop;
-        console.log(y);
         const percent = (y / this.offsetHeight) * 100;
         bar.style.height = percent + "%";
         let boost = Math.round((percent / initialSpeedHeightPercent) * 10) / 10;

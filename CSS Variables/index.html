@@ -60,7 +60,6 @@
       const inputs = document.querySelectorAll(".controls input");
       const root = document.querySelector(":root");
       function handleUpdate() {
-        console.log(this);
         const suffix = this.dataset.sizing || "";
         root.style.setProperty(`--${this.name}`, this.value + suffix);
       }

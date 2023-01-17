@@ -44,7 +44,7 @@
 
       navigator.geolocation.watchPosition(
         (data) => {
-          console.log(data);
+          warning.classList.remove('no-geolocation-warning--active')
           speed.textContent = Math.round(+data.coords.speed * 100) / 100;
           arrow.style.transform = `rotate(${data.coords.heading}deg)`;
         },
