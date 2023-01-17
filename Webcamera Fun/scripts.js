@@ -5,11 +5,18 @@ const strip = document.querySelector(".strip");
 const snap = document.querySelector(".snap");
 
 function getVideo() {
+  const errorMessage = document.querySelector(".no-camera-warning");
+
   navigator.mediaDevices
     .getUserMedia({ video: true, audio: false })
     .then((localMediaStream) => {
+      errorMessage.classList.remove("no-camera-warning--active")
       video.srcObject = localMediaStream;
       video.play();
+    })
+    .catch(() => {
+      errorMessage.classList.add("no-camera-warning--active");
+      setInterval(getVideo, 1500)
     });
 }
 
@@ -55,7 +62,6 @@ function rgbSplit(pixels, levels) {
   }
   return pixels;
 }
-
 
 getVideo();
 video.addEventListener("canplay", paintToCanvas);
