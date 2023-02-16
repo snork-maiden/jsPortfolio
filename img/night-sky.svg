@@ -1,103 +1,102 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1500">
   <defs>
-    <pattern id="b" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
-      <use fill="#262440" href="#a" y="2"/>
-      <use fill="#262440" href="#a" x="1" y="2"/>
-      <use fill="#353349" href="#a" x="2" y="2"/>
+    <pattern id="b" width="3" height="3" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
+      <use y="2" fill="#262440" href="#a"/>
+      <use x="1" y="2" fill="#262440" href="#a"/>
+      <use x="2" y="2" fill="#353349" href="#a"/>
       <use fill="#353349" href="#a"/>
-      <use fill="#403e52" href="#a" x="2"/>
-      <use fill="#403e52" href="#a" x="1" y="1"/>
+      <use x="2" fill="#403e52" href="#a"/>
+      <use x="1" y="1" fill="#403e52" href="#a"/>
     </pattern>
-    <pattern id="c" width="7" height="11" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="c" width="7" height="11" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#494859">
         <use href="#a"/>
-        <use href="#a" y="5"/>
-        <use href="#a" x="1" y="10"/>
-        <use href="#a" x="2" y="1"/>
-        <use href="#a" x="2" y="4"/>
-        <use href="#a" x="3" y="8"/>
-        <use href="#a" x="4" y="3"/>
-        <use href="#a" x="4" y="7"/>
-        <use href="#a" x="5" y="2"/>
-        <use href="#a" x="5" y="6"/>
-        <use href="#a" x="6" y="9"/>
+        <use y="5" href="#a"/>
+        <use x="1" y="10" href="#a"/>
+        <use x="2" y="1" href="#a"/>
+        <use x="2" y="4" href="#a"/>
+        <use x="3" y="8" href="#a"/>
+        <use x="4" y="3" href="#a"/>
+        <use x="4" y="7" href="#a"/>
+        <use x="5" y="2" href="#a"/>
+        <use x="5" y="6" href="#a"/>
+        <use x="6" y="9" href="#a"/>
       </g>
     </pattern>
-    <pattern id="d" width="5" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="d" width="5" height="13" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#494859">
-        <use href="#a" y="5"/>
-        <use href="#a" y="8"/>
-        <use href="#a" x="1" y="1"/>
-        <use href="#a" x="1" y="9"/>
-        <use href="#a" x="1" y="12"/>
-        <use href="#a" x="2"/>
-        <use href="#a" x="2" y="4"/>
-        <use href="#a" x="3" y="2"/>
-        <use href="#a" x="3" y="6"/>
-        <use href="#a" x="3" y="11"/>
-        <use href="#a" x="4" y="3"/>
-        <use href="#a" x="4" y="7"/>
-        <use href="#a" x="4" y="10"/>
+        <use y="5" href="#a"/>
+        <use y="8" href="#a"/>
+        <use x="1" y="1" href="#a"/>
+        <use x="1" y="9" href="#a"/>
+        <use x="1" y="12" href="#a"/>
+        <use x="2" href="#a"/>
+        <use x="2" y="4" href="#a"/>
+        <use x="3" y="2" href="#a"/>
+        <use x="3" y="6" href="#a"/>
+        <use x="3" y="11" href="#a"/>
+        <use x="4" y="3" href="#a"/>
+        <use x="4" y="7" href="#a"/>
+        <use x="4" y="10" href="#a"/>
       </g>
     </pattern>
-    <pattern id="e" width="17" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="e" width="17" height="13" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#525160">
-        <use href="#a" y="11"/>
-        <use href="#a" x="2" y="9"/>
-        <use href="#a" x="5" y="12"/>
-        <use href="#a" x="9" y="4"/>
-        <use href="#a" x="12" y="1"/>
-        <use href="#a" x="16" y="6"/>
+        <use y="11" href="#a"/>
+        <use x="2" y="9" href="#a"/>
+        <use x="5" y="12" href="#a"/>
+        <use x="9" y="4" href="#a"/>
+        <use x="12" y="1" href="#a"/>
+        <use x="16" y="6" href="#a"/>
       </g>
     </pattern>
-    <pattern id="f" width="19" height="17" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="f" width="19" height="17" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#020c36">
-        <use href="#a" y="9"/>
-        <use href="#a" x="16" y="5"/>
-        <use href="#a" x="14" y="2"/>
-        <use href="#a" x="11" y="11"/>
-        <use href="#a" x="6" y="14"/>
+        <use y="9" href="#a"/>
+        <use x="16" y="5" href="#a"/>
+        <use x="14" y="2" href="#a"/>
+        <use x="11" y="11" href="#a"/>
+        <use x="6" y="14" href="#a"/>
       </g>
       <g fill="#595866">
-        <use href="#a" x="3" y="13"/>
-        <use href="#a" x="9" y="7"/>
-        <use href="#a" x="13" y="10"/>
-        <use href="#a" x="15" y="4"/>
-        <use href="#a" x="18" y="1"/>
+        <use x="3" y="13" href="#a"/>
+        <use x="9" y="7" href="#a"/>
+        <use x="13" y="10" href="#a"/>
+        <use x="15" y="4" href="#a"/>
+        <use x="18" y="1" href="#a"/>
       </g>
     </pattern>
-    <pattern id="g" width="47" height="53" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="g" width="47" height="53" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#6F6611">
-        <use href="#a" x="2" y="5"/>
-        <use href="#a" x="16" y="38"/>
-        <use href="#a" x="46" y="42"/>
-        <use href="#a" x="29" y="20"/>
+        <use x="2" y="5" href="#a"/>
+        <use x="16" y="38" href="#a"/>
+        <use x="46" y="42" href="#a"/>
+        <use x="29" y="20" href="#a"/>
       </g>
     </pattern>
-    <pattern id="h" width="59" height="71" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="h" width="59" height="71" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#6F6611">
-        <use href="#a" x="33" y="13"/>
-        <use href="#a" x="27" y="54"/>
-        <use href="#a" x="55" y="55"/>
+        <use x="33" y="13" href="#a"/>
+        <use x="27" y="54" href="#a"/>
+        <use x="55" y="55" href="#a"/>
       </g>
     </pattern>
-    <pattern id="i" width="139" height="97" patternUnits="userSpaceOnUse" patternTransform="rotate(-158 11955 12862) scale(26.65)">
+    <pattern id="i" width="139" height="97" patternTransform="rotate(-158 11942 12899) scale(27)" patternUnits="userSpaceOnUse">
       <g fill="#6F6611">
-        <use href="#a" x="11" y="8"/>
-        <use href="#a" x="51" y="13"/>
-        <use href="#a" x="17" y="73"/>
-        <use href="#a" x="99" y="57"/>
+        <use x="11" y="8" href="#a"/>
+        <use x="51" y="13" href="#a"/>
+        <use x="17" y="73" href="#a"/>
+        <use x="99" y="57" href="#a"/>
       </g>
     </pattern>
-    <path stroke="#0D0236" stroke-width=".9" id="a" d="M0 0h1v1H0z"/>
+    <path id="a" stroke="#031426" stroke-width=".9" d="M0 0h1v1H0z"/>
   </defs>
-  <rect fill="url(#b)" width="100%" height="100%"/>
-  <rect fill="url(#c)" width="100%" height="100%"/>
-  <rect fill="url(#d)" width="100%" height="100%"/>
-  <rect fill="url(#e)" width="100%" height="100%"/>
-  <rect fill="url(#f)" width="100%" height="100%"/>
-  <rect fill="url(#g)" width="100%" height="100%"/>
-  <rect fill="url(#h)" width="100%" height="100%"/>
-  <rect fill="url(#i)" width="100%" height="100%"/>
+  <rect width="100%" height="100%" fill="url(#b)"/>
+  <rect width="100%" height="100%" fill="url(#c)"/>
+  <rect width="100%" height="100%" fill="url(#d)"/>
+  <rect width="100%" height="100%" fill="url(#e)"/>
+  <rect width="100%" height="100%" fill="url(#f)"/>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#h)"/>
+  <rect width="100%" height="100%" fill="url(#i)"/>
 </svg>

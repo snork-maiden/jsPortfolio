@@ -32,10 +32,10 @@ img {
 }
 
 :root {
-  --inverse-text-color: #14110fff;
-  --accent-color: rgb(247, 40, 40);
-  --text-color: #f3f3f4ff;
+  --text-color: rgb(231, 230, 223);
   --text-accent-color: #f9a03fff;
+  --gradient-bottom: #08447d;
+  --gradient-top: #8a3f73;
 }
 
 .page {
@@ -101,10 +101,11 @@ img {
   width: 350px;
   max-width: 550px;
   flex-grow: 1;
+  border-radius: 3px;
   background-image: linear-gradient(
     to bottom,
-    hsl(229, 71%, 29%) 30%,
-    #af3baf 100%
+    var(--gradient-top) 10%,
+    var(--gradient-bottom) 80%
   );
 }
 @media screen and (min-width: 750px) {
@@ -147,6 +148,7 @@ img {
   align-self: start;
   width: 100px;
   height: 100px;
+  filter: grayscale(0.1);
 }
 
 @media screen and (min-width: 750px) {
@@ -157,8 +159,10 @@ img {
 }
 
 .project__description {
+  text-align: right;
   grid-area: description;
   width: 90%;
+  font-weight: 500;
   font-size: 0.7em;
   padding-bottom: 0.1em;
 }

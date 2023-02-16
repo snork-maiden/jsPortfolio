@@ -1,1 +1,11 @@
-<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="47%" y1="0%" x2="53%" y2="100%"><stop offset="5%" stop-color="#15297eff"></stop><stop offset="95%" stop-color="#c5449aff"></stop></linearGradient></defs><path d="M 0,400 C 0,400 0,200 0,200 C 193.86666666666667,167.73333333333335 387.73333333333335,135.46666666666667 542,126 C 696.2666666666667,116.53333333333333 810.9333333333334,129.86666666666667 954,146 C 1097.0666666666666,162.13333333333333 1268.5333333333333,181.06666666666666 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150" viewBox="0 0 1440 400">
+  <defs>
+    <linearGradient id="a" x1="47%" x2="53%" y1="0%" y2="100%">
+      <!-- <stop offset="5%" stop-color="#15297eff"/>
+      <stop offset="95%" stop-color="#c5449aff"/> -->
+      <stop offset="30%" stop-color="#08447D"/>
+      <stop offset="70%" stop-color="#8a3f73"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M0 400V200c194-32 388-65 542-74s269 4 412 20l486 54v200Z" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"/>
+</svg>
