@@ -43,7 +43,7 @@ img {
   background-image: url(img/night-sky.svg);
   background-attachment: fixed;
   color: var(--text-color);
-  font-size: 20px;
+  font-size: clamp(18px, 3vw, 24px);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -51,27 +51,19 @@ img {
 @media screen and (min-width: 750px) {
   .page {
     background-size: cover;
-    font-size: 24px;
   }
 }
 
 .page-header {
   display: flex;
   max-width: 100vw;
-  padding: 20px;
+  padding: clamp(20px, 10vw, 60px);
+  margin-bottom: clamp(0px, 2vw, 50px);
   background-color: transparent;
   background-image: url(img/top-gradient.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 190%;
-}
-
-@media screen and (min-width: 750px) {
-  .page-header {
-    padding: 60px;
-    padding-top: 40px;
-    margin-bottom: 50px;
-  }
 }
 
 .logo {
@@ -84,22 +76,20 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: min(1200px, 95vw);
+  gap: clamp(0.5em, 3vw, 40px);
+  max-width: min(1250px, 97vw);
   margin: 0 auto;
   padding: 20px;
 }
 
 @media screen and (min-width: 750px) {
   .projects-list {
-    max-width: 1250px;
-    gap: 40px;
     margin-bottom: 10vh;
   }
 }
 .project {
-  width: 350px;
-  max-width: 550px;
+  width: clamp(280px, 30vw, 370px);
+  max-width: min(25em, 550px);
   flex-grow: 1;
   border-radius: 3px;
   background-image: linear-gradient(
@@ -108,11 +98,7 @@ img {
     var(--gradient-bottom) 80%
   );
 }
-@media screen and (min-width: 750px) {
-  .project {
-    width: 370px;
-  }
-}
+
 .project__link {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -120,9 +106,17 @@ img {
   justify-items: center;
   grid-template-areas:
     "image title"
-    "description description";
-  gap: 20px 10px;
+    "image description";
+  gap: min(3vw, 1em) 0.7em;
   padding: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .project__link {
+    grid-template-areas:
+      "image title"
+      "description description";
+  }
 }
 
 .project__link:hover,
@@ -140,30 +134,24 @@ img {
   font-family: "Roboto Mono", monospace;
   font-weight: normal;
   text-align: center;
-  font-size: 1.2em;
+  font-size: clamp(1em, 10vw, 1.2em);
 }
 
 .project__image {
   grid-area: image;
   align-self: start;
-  width: 100px;
-  height: 100px;
+  width: clamp(100px, 15vw, 128px);
+  height: clamp(100px, 15vw, 128px);
   filter: grayscale(0.1);
 }
 
-@media screen and (min-width: 750px) {
-  .project__image {
-    width: 128px;
-    height: 128px;
-  }
-}
 
 .project__description {
   text-align: right;
   grid-area: description;
   width: 90%;
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-bottom: 0.1em;
 }
 
